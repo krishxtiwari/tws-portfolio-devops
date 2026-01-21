@@ -52,3 +52,17 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+// Simple fade-in on scroll
+const sections = document.querySelectorAll("section");
+
+const reveal = () => {
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < window.innerHeight - 100) {
+      section.classList.add("visible");
+    }
+  });
+};
+
+window.addEventListener("scroll", reveal);
+reveal();
