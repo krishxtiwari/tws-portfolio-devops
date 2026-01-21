@@ -11044,3 +11044,158 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+/* ===============================
+   PROFESSIONAL CUSTOM OVERRIDES
+   Author: Krish Ajay Tiwari
+================================ */
+
+/* Global */
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #0f172a;
+  color: #e5e7eb;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* Navbar */
+#mainNav {
+  background: rgba(15, 23, 42, 0.9) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+#mainNav .nav-link {
+  color: #e5e7eb !important;
+  transition: color 0.3s ease;
+}
+
+#mainNav .nav-link:hover {
+  color: #22c55e !important;
+}
+
+/* Hero Section */
+.masthead {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.masthead-heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.masthead-subheading {
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+/* Buttons */
+.btn-primary {
+  background: #22c55e;
+  border: none;
+  padding: 12px 28px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
+
+.btn-outline-light {
+  border: 2px solid #94a3b8;
+  color: #e5e7eb;
+}
+
+.btn-outline-light:hover {
+  background: #22c55e;
+  border-color: #22c55e;
+}
+
+/* Section Headings */
+.page-section-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* Portfolio Cards */
+.portfolio-item {
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.portfolio-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+}
+
+.portfolio-item img {
+  transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.08);
+}
+
+/* About Section */
+#about {
+  background: linear-gradient(135deg, #020617, #020617);
+}
+
+#about .lead {
+  color: #cbd5f5;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Contact Form */
+.form-control {
+  background: #020617;
+  border: 1px solid #334155;
+  color: #e5e7eb;
+}
+
+.form-control:focus {
+  background: #020617;
+  border-color: #22c55e;
+  box-shadow: none;
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background: #020617;
+  color: #94a3b8;
+  padding: 30px 0;
+  font-size: 0.9rem;
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
