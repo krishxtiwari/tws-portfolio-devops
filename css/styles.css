@@ -83,3 +83,61 @@ section { padding: 80px 0; opacity: 1 !important; transform: none !important; }
 
 .footer { background: #020617; color: #94a3b8; padding: 30px 0; text-align: center; }
 .copyright { background-color: #1a252f; padding: 1.5rem 0; }
+/* HERO */
+.masthead {
+  background: linear-gradient(135deg, #020617, #0f172a);
+  padding-top: 8rem;
+  padding-bottom: 6rem;
+}
+
+.masthead-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.masthead-subheading {
+  color: #cbd5e1;
+  font-size: 1.1rem;
+}
+
+/* PROJECT CARD */
+.project-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 24px;
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  border-color: #22c55e;
+}
+
+.project-title {
+  color: #f8fafc;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.project-desc {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+.project-tech span {
+  background: #1e293b;
+  color: #22c55e;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font
+
