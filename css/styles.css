@@ -430,3 +430,77 @@ section { padding: 80px 0; opacity: 1 !important; transform: none !important; }
 .custom-green-btn:hover {
     background-color: #16a34a !important; /* Slightly darker green on hover */
 }
+/* --- PROJECTS SECTION OVERRIDES --- */
+
+/* 1. Section Background */
+#portfolio {
+    background-color: #0f172a; /* Deep Navy to match Contact section */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* 2. Heading Style */
+.project-heading {
+    color: #fff; /* White text to pop against navy bg */
+    letter-spacing: 2px;
+}
+
+/* 3. The Card Box */
+.project-card {
+    background-color: #1e293b; /* Slate 800 - Lighter than bg */
+    border: 1px solid #334155; /* Subtle border */
+    border-radius: 8px;
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Hover Effect: Lifts up and glows green */
+.project-card:hover {
+    transform: translateY(-5px);
+    border-color: #22c55e; 
+}
+
+/* 4. Card Typography */
+.card-title {
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    color: #94a3b8; /* Muted grey text */
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* 5. Tech Stack Badges */
+.tech-badge {
+    display: inline-block;
+    background-color: #0f172a; /* Dark background for badge */
+    color: #22c55e; /* Green text */
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35rem 0.75rem;
+    border-radius: 50px;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #22c55e;
+}
+
+/* 6. Link Style */
+.project-link {
+    color: #22c55e;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.project-link:hover {
+    color: #4ade80; /* Lighter green on hover */
+    text-decoration: underline;
+}
