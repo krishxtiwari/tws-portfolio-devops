@@ -11196,3 +11196,64 @@ header {
   opacity: 1 !important;
   transform: none !important;
 }
+/* ===== HERO SECTION ===== */
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.hero-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  animation: fadeUp 1s ease forwards;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  animation: fadeUp 1.3s ease forwards;
+}
+
+.hero-buttons a {
+  margin: 0 10px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #1abc9c;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #16a085;
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background: #fff;
+  color: #000;
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
