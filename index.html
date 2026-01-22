@@ -147,20 +147,31 @@
 <!-- CONTACT -->
 <section class="page-section" id="contact">
     <div class="container">
-        <h2 class="text-center text-uppercase mb-5" style="color: #495057; letter-spacing: 2px;">Contact Me</h2>
+        <h2 class="text-center text-uppercase font-weight-bold mb-5 contact-heading">Contact Me</h2>
+
         <div class="row justify-content-center">
-            <div class="col-lg-10">
+            <div class="col-lg-8">
                 <form id="contactForm">
-                    <input class="contact-input" type="text" placeholder="Full Name">
-                    <input class="contact-input" type="email" placeholder="Email Address">
-                    <textarea class="contact-input" placeholder="Message" style="height: 200px"></textarea>
-                    <button class="btn-send" type="submit">Send Message</button>
+                    <div class="mb-3">
+                        <input class="form-control custom-dark-input" id="name" type="text" placeholder="Full Name" required />
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input class="form-control custom-dark-input" id="email" type="email" placeholder="Email Address" required />
+                    </div>
+                    
+                    <div class="mb-3">
+                        <textarea class="form-control custom-dark-input" id="message" type="text" placeholder="Message" style="height: 10rem" required></textarea>
+                    </div>
+
+                    <div class="d-grid gap-2 d-md-block">
+                        <button class="btn btn-primary btn-xl custom-green-btn" id="submitButton" type="submit">Send Message</button>
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </section>
-
 <!-- FOOTER -->
 <footer class="footer bg-dark text-white text-center py-4">
     <div class="container">
