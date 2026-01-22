@@ -291,3 +291,52 @@ section { padding: 80px 0; opacity: 1 !important; transform: none !important; }
     transform: translateY(0);
   }
 }
+  /* Contact Section UI Refresh */
+#contact {
+    background-color: #0f172a; /* Deep Navy Background */
+}
+
+.contact-title {
+    text-align: center;
+    color: #495057; /* Muted grey-blue title */
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.form-custom {
+    width: 100%;
+    background-color: #020617; /* Darker input background */
+    border: 1px solid #1e293b; /* Subtle border */
+    color: #94a3b8; /* Placeholder/Text color */
+    padding: 1.5rem;
+    font-size: 1.25rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-custom:focus {
+    border-color: #22c55e; /* Green border on focus */
+}
+
+.form-custom::placeholder {
+    color: #475569;
+}
+
+.btn-send {
+    background-color: #22c55e; /* Vibrant Green */
+    color: #fff;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-send:hover {
+    background-color: #16a34a;
+    transform: translateY(-2px);
+}
