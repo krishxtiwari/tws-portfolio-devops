@@ -66,3 +66,10 @@ const reveal = () => {
 
 window.addEventListener("scroll", reveal);
 reveal();
+const aboutSection = document.getElementById("about");
+
+if (aboutSection) {
+  aboutSection.addEventListener("click", () => {
+    aboutSection.classList.toggle("active");
+  });
+}
