@@ -499,6 +499,66 @@ section { padding: 80px 0; opacity: 1 !important; transform: none !important; }
     font-size: 0.9rem;
     transition: color 0.2s;
 }
+/* ===== PREMIUM NAVBAR FIX ===== */
+#mainNav {
+    background: rgba(10, 15, 30, 0.95);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+#mainNav .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+#mainNav .navbar-nav {
+    list-style: none; /* 🔥 removes bullets */
+}
+
+#mainNav .nav-link {
+    position: relative;
+    font-weight: 600;
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+
+/* underline hover animation */
+#mainNav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 6px;
+    width: 0%;
+    height: 2px;
+    background: #00ff9c;
+    transition: width 0.3s ease;
+}
+
+#mainNav .nav-link:hover::after {
+    width: 100%;
+}
+
+#mainNav .nav-link:hover {
+    color: #00ff9c !important;
+}
+
+/* mobile menu animation */
+.navbar-collapse {
+    animation: slideDown 0.4s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 .project-link:hover {
     color: #4ade80; /* Lighter green on hover */
