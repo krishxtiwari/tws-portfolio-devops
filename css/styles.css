@@ -1,7 +1,5 @@
-/* RESET */
+/* RESET - Kept box-sizing, removed padding/margin reset to avoid Bootstrap conflicts */
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -9,6 +7,7 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #020c1b;
     color: #ccd6f6;
+    margin: 0;
 }
 
 /* NAVBAR */
@@ -16,20 +15,35 @@ body {
     background: rgba(2, 12, 27, 0.9);
     padding: 15px 0;
     backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+/* NAVBAR BRAND */
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.5rem;
 }
 
 /* ABOUT SECTION */
 #about {
-    min-height: 100vh;
+    /* Changed to 100dvh for better mobile browser support */
+    min-height: 100dvh; 
     display: flex;
     align-items: center;
     background: linear-gradient(135deg, #020c1b, #0a192f);
+    padding-top: 80px; /* To prevent content hiding behind fixed navbar */
+}
+
+/* ANIMATION CLASSES */
+/* Initial state */
+.hidden {
     opacity: 0;
     transform: translateY(40px);
     transition: all 0.8s ease;
 }
 
-#about.show {
+/* Active state added by JS */
+.show {
     opacity: 1;
     transform: translateY(0);
 }
