@@ -619,3 +619,7 @@ section { padding: 80px 0; opacity: 1 !important; transform: none !important; }
     color: #4ade80; /* Lighter green on hover */
     text-decoration: underline;
 }
+  .about-section {
+    background: red !important;
+}
+
